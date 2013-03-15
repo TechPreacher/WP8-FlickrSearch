@@ -6,5 +6,6 @@ WP8-FlickrSearch is a simple Flickr Search Client for Windows Phone 8, demonstra
 * Using voice command to start the app with parameters and using speech recognition in the app.
 * Adding a selected photo as lock screen image.
 
+IMPORTANT!
 To run this application, you have to edit DataHelper.ch and provide a valid Flickr API key in the line of code: 
 > public string sFlickrAPIKey = "";
