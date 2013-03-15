@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.0">
+  <CommandSet xml:lang="en-us">
+
+    <CommandPrefix> Flicker Browser </CommandPrefix>
+    <Example> Search for pictures on (Topic) </Example>
+
+    <Command Name="Start">
+      <Example> Start </Example>
+      <ListenFor> Start </ListenFor>
+      <Feedback> Showing Search Page </Feedback>
+      <Navigate Target="SearchPage.xaml" />
+    </Command>
+
+    <Command Name="SearchPictures">
+      <Example> Search pictures about Microsoft  </Example>
+      <ListenFor> Search [for] pictures [about] [on] {search}</ListenFor>
+      <Feedback> Showing pictures on {search} </Feedback>
+      <Navigate Target="MainPage.xaml" />
+    </Command>
+
+    <PhraseList Label="search">
+      <Item> Flower </Item>
+      <Item> Mustang </Item>
+      <Item> Microsoft </Item>
+      <Item> Sky </Item>
+      <Item> Beach </Item>
+      <Item> Sunset </Item>
+    </PhraseList>
+
+  </CommandSet>
+</VoiceCommands>
